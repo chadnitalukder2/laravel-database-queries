@@ -1,6 +1,9 @@
 <?php
 
+use Faker\Factory;
 use Illuminate\Support\Facades\Route;
+use App\Models\Comment;
+use Illuminate\Support\Facades\DB;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +17,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+
+    // $user = DB::select('select * from users where id = ?', [1]);
+    // dump("mysql : ",$user);
+  
+
+
     return view('welcome');
 });
